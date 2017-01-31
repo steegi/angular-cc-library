@@ -1,3 +1,7 @@
+# MOVED
+Please use the [angular-cc-library](https://www.npmjs.com/package/angular-cc-library)  
+Project was moved to comply with new angular naming conventions
+
 # Description
 
 Angular2 CC Library - for validation and formating of input parameters
