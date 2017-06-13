@@ -13,6 +13,12 @@ export class CvcFormatDirective {
     this.target = this.el.nativeElement;
   }
 
+  ngAfterViewInit() {
+    if(this.el.nativeElement.nodeName === 'ION-INPUT') {
+      this.target = this.el.nativeElement.firstElementChild;
+    }
+  }
+
   @HostListener('keypress', ['$event']) onKeypress(e) {
     if (!CreditCard.restrictNumeric(e) && !CreditCard.restrictCvc(e.which, this.target)) {
       e.preventDefault();

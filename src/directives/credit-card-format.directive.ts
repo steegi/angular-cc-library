@@ -15,6 +15,12 @@ export class CreditCardFormatDirective {
     this.cards = CreditCard.cards();
   }
 
+  ngAfterViewInit() {
+    if(this.el.nativeElement.nodeName === 'ION-INPUT') {
+      this.target = this.el.nativeElement.firstElementChild;
+    }
+  }
+
   @HostListener('keypress', ['$event']) onKeypress(e) {
     if (CreditCard.restrictNumeric(e)) {
       if (CreditCard.isCardNumber(e.which, this.target)) {

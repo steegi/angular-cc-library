@@ -13,6 +13,12 @@ export class ExpiryFormatDirective {
     this.target = this.el.nativeElement;
   }
 
+  ngAfterViewInit() {
+    if(this.el.nativeElement.nodeName === 'ION-INPUT') {
+      this.target = this.el.nativeElement.firstElementChild;
+    }
+  }
+
   @HostListener('keypress', ['$event']) onKeypress(e) {
     if (CreditCard.restrictNumeric(e)) {
       if (CreditCard.restrictExpiry(e.which, this.target)) {
