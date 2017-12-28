@@ -25,7 +25,7 @@ let cards = [
     type: 'visa',
     patterns: [4],
     format: defaultFormat,
-    length: [13, 16],
+    length: [13, 16, 19],
     cvvLength: [3],
     luhn: true
   }, {
@@ -67,7 +67,7 @@ let cards = [
     type: 'jcb',
     patterns: [35],
     format: defaultFormat,
-    length: [16],
+    length: [16, 19],
     cvvLength: [3],
     luhn: true
   }
