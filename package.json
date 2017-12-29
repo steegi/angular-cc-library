@@ -22,7 +22,7 @@
     "README.md",
     "index.d.ts",
     "index.js",
-    "tsconfig-npm-package.json",
+    "tsconfig*",
     "lib/*"
   ],
   "keywords": [
