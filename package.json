@@ -18,13 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/nogorilla/angular-cc-library.git"
   },
-  "files": [
-    "README.md",
-    "index.d.ts",
-    "index.js",
-    "tsconfig*",
-    "lib/*"
-  ],
   "keywords": [
     "angular",
     "validate",
