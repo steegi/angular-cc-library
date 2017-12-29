@@ -1,5 +1,5 @@
-import { AbstractControl } from '@angular/forms';
+import { AbstractControl, ValidationErrors } from '@angular/forms';
 export declare class CreditCardValidator {
-    static validateCCNumber(control: AbstractControl): any;
-    static validateExpDate(control: AbstractControl): any;
+    static validateCCNumber(control: AbstractControl): ValidationErrors | null;
+    static validateExpDate(control: AbstractControl): ValidationErrors | null;
 }
