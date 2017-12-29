@@ -12,6 +12,7 @@
     "prebuild": "rimraf dist",
     "build": "npm run tsc",
     "prepublish": "npm run ngc-build",
+    "install": "npm run ngc-build",
     "ngc-build": "rm -rf lib && \"./node_modules/.bin/ngc\" -p tsconfig-npm-package.json"
   },
   "repository": {
