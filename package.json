@@ -38,12 +38,13 @@
     "url": "https://github.com/nogorilla/angular-cc-library/issues"
   },
   "homepage": "https://github.com/nogorilla/angular-cc-library#readme",
-  "dependencies" : {
-    "@angular/common": "^4.4.6",
-    "@angular/compiler": "^4.4.6",
-    "@angular/compiler-cli": "^4.4.6"
+  "dependencies": {
+    "ngc": "^1.0.0"
   },
   "devDependencies": {
+    "@angular/common": "^4.4.6",
+    "@angular/compiler": "^4.4.6",
+    "@angular/compiler-cli": "^4.4.6",
     "@angular/core": "^4.4.6",
     "@angular/forms": "^4.4.6",
     "@angular/http": "^4.4.6",
